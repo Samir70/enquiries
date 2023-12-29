@@ -94,3 +94,16 @@ Enquiry.init({
 ```
 
 Also make `enq_id` the primary key in the migration file. (Rename the `id` key and delete the original `enq_id`). And remove the `created_at` and `updated_at` columns, since we turned off `timestamps`. Set `allowNull` to false for remaining columns.
+
+## host on render
+
+- click on new web service
+- configure to allow access to github repo
+- build command is `npm install && npm run build`
+- start command is `node server/server.js`
+- set auto-deploy to 'no' (save resources on free tier)
+- set up environment variables (can be done after creating service)
+
+## to do
+
+- add a page where people can add an enquiry
