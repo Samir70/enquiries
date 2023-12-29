@@ -37,6 +37,8 @@ Still in root directory, run `sequelize seed:generate --name enquiries`, fill ou
 
 Run `sequelize db:seed:all`
 
+Make an enquiries controller to get all enquiries. Run the server with `node server.js` and test with `postman` or browser with url `http://localhost:4005/api/enquiries`. (Worked after change `tableName` in `models/enquiry.js` to "Enquiries")
+
 ## actions for database
 
 Sign-up to `supabase`, new project called `enquiries` (saved the generated password)

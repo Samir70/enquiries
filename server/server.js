@@ -2,12 +2,15 @@ const express = require('express');
 const { Sequelize } = require('sequelize');
 const path = require('path');
 const cors = require('cors');
+const enquiriesController = require('./controllers/enquiriesController')
 require('dotenv').config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+app.use("/api/enquiries", enquiriesController)
 
 const port = process.env.PORT || 4005
 app.listen(port, () => {
