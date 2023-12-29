@@ -27,6 +27,10 @@ Make `server.js` and `controllers` folder in server folder.
 
 Rename `config.json` to `config.js`, making necessary changes to export an object. Also change values to `process.env.???` (and require `dotenv`) and update `require` in `server/index.js`
 
+Setup `server/server.js` with only `console.log` of port
+
+Make a `.sequelizerc` file on same level as `.env`
+
 ## actions for database
 
 Sign-up to `supabase`, new project called `enquiries` (saved the generated password)
