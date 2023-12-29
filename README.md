@@ -14,3 +14,13 @@ Then install deps with:
 ```bash
 npm i cors dotenv express pg pg-hstore sequelize react-router-dom
 ```
+
+Sequalise:
+
+```bash
+npm i -g sequelize-cli
+cd server
+sequelize init
+```
+
+Make `server.js` and `controllers` folder in server folder.
