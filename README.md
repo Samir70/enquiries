@@ -2,7 +2,7 @@
 
 A `PERN` app following the example of [library @ Azzion-tech](https://www.youtube.com/watch?v=fBcqjYfVCdY)
 
-## actions
+## actions for setup
 
 Made a new repo, then installed `React` with:
 
@@ -24,3 +24,9 @@ sequelize init
 ```
 
 Make `server.js` and `controllers` folder in server folder.
+
+Rename `config.json` to `config.js`, making necessary changes to export an object. Also change values to `process.env.???` (and require `dotenv`) and update `require` in `server/index.js`
+
+## actions for database
+
+Sign-up to `supabase`, new project called `enquiries` (saved the generated password)
