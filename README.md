@@ -31,6 +31,12 @@ Setup `server/server.js` with only `console.log` of port
 
 Make a `.sequelizerc` file on same level as `.env`
 
+Run in root directory: `sequelize db:migrate`. Should get logging. Check database on `supabase` by going to the table-editor tab. Table is empty.
+
+Still in root directory, run `sequelize seed:generate --name enquiries`, fill out some dummy data in commands. (Use `Enquiries` as database name). 
+
+Run `sequelize db:seed:all`
+
 ## actions for database
 
 Sign-up to `supabase`, new project called `enquiries` (saved the generated password)
