@@ -39,6 +39,21 @@ Run `sequelize db:seed:all`
 
 Make an enquiries controller to get all enquiries. Run the server with `node server.js` and test with `postman` or browser with url `http://localhost:4005/api/enquiries`. (Worked after change `tableName` in `models/enquiry.js` to "Enquiries")
 
+Make the frontend (using `react-router` etc)
+
+Run `npm run build`
+
+Setup server to serve `react` app by adding:
+
+```js
+app.use(express.static(path.join(__dirname, "../build")))
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../build/index.html"))
+})
+```
+
+Now you only need to run the server with `node server/server.js` and navigate to `http://localhost:4005/enquiries` to see the app.
+
 ## actions for database
 
 Sign-up to `supabase`, new project called `enquiries` (saved the generated password)
